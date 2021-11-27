@@ -2,10 +2,8 @@ package com.springdockertest.springdock.controller;
 
 import com.springdockertest.springdock.entity.Course;
 import com.springdockertest.springdock.service.CourseService;
-import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
-import io.swagger.annotations.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,7 +26,7 @@ public class CourseController {
     @GetMapping("/course")
     public String courseHome() {
 
-        return "welcome to the course tutorial";
+        return "welcome to the course tutorial/commit";
     }
 
     @PostMapping("/course")
