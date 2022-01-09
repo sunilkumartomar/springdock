@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+@RestController// Orgiin added
 public class StudentController {
 
     @Autowired
@@ -36,7 +36,7 @@ public class StudentController {
     public List<Student> getStudentList(@RequestBody Student student) {
         return studentService.getStudentList(student);
     }
-
+  // Sunil has added commment
     @DeleteMapping("/student/{id}")
     public ResponseEntity<HttpStatus> deleteStudent(@PathVariable("id") String id) {
         studentService.deleteStudent(Long.parseLong(id));
